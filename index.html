@@ -94,6 +94,49 @@
             color: white;
         }
 
+        /* Media query for smaller screens (tablets, mobile devices) */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .blog-post, .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .sidebar img {
+                width: 100%; /* Make images full width on small screens */
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .blog-post, .sidebar {
+                padding: 15px;
+            }
+
+            .blog-post h2, .sidebar h2 {
+                font-size: 18px;
+            }
+
+            .blog-post p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -132,7 +175,6 @@
                     dicta sequi repellat. Possimus earum sit temporibus doloribus necessitatibus
                     iure nobis, laboriosam voluptates ad
                     <br /><br />
-
                     amet aliquam impedit quam accusantium placeat officia corrupti! Eaque, velit?
                     Dolor odit quia repellendus dicta accusamus totam vel consequatur porro magni
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde tempore,
