@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Exciting Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .blog-post {
+            width: 65%;
+        }
+
+        .sidebar {
+            width: 30%;
+        }
+
+        .blog-post img, .sidebar img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .balloon-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .balloon-gallery img {
+            width: 48%;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My exciting website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <article class="blog-post">
+                <h2>An Exciting Blog Post</h2>
+                <img src="https://via.placeholder.com/300x200.png?text=Hot+Air+Balloon+1" alt="Hot Air Balloon 1" class="featured-img">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel urna a orci vehicula tempus. Integer sit amet sapien non elit facilisis tincidunt.</p>
+
+                <h3>More Balloon Pictures</h3>
+                <div class="balloon-gallery">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+2" alt="Hot Air Balloon 2">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+3" alt="Hot Air Balloon 3">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+4" alt="Hot Air Balloon 4">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+5" alt="Hot Air Balloon 5">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+6" alt="Hot Air Balloon 6">
+                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+7" alt="Hot Air Balloon 7">
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <h2>Photography</h2>
+                <img src="https://via.placeholder.com/300x200.png?text=Photography" alt="Photography">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut feugiat lectus. Duis viverra, lectus at scelerisque commodo, nulla sapien tincidunt sem, eget condimentum massa dolor a urna.</p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Exciting Website</p>
+    </footer>
+</body>
+</html>
