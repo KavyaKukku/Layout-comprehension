@@ -14,29 +14,33 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            background-color: #f4f4f4;
             padding: 20px;
         }
 
         header {
             background-color: black;
             color: white;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
+            text-align: center;
+            margin-top: 10px;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
         }
 
         .content {
@@ -45,47 +49,62 @@
             margin-top: 20px;
         }
 
+        .blog-post, .sidebar {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
         .blog-post {
             width: 65%;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
         }
 
         .sidebar {
             width: 30%;
         }
 
-        .blog-post img, .sidebar img {
-            width: 100%;
+        .sidebar img {
+            width: 48%;
             height: auto;
             margin-bottom: 10px;
         }
 
-        .balloon-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .blog-post h2, .sidebar h2 {
+            margin-bottom: 15px;
+            color: #333;
         }
 
-        .balloon-gallery img {
-            width: 48%;
-            height: auto;
+        .blog-post p {
+            margin-bottom: 15px;
+            color: #555;
         }
 
         footer {
-            margin-top: 20px;
             text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: black;
+            color: white;
         }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>My exciting website!</h1>
+        <h1>My Exciting Website!</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About us</a></li>
-                <li><a href="#">Our History</a></li>
-                <li><a href="#">Photography</a></li>
+                <li><a href="#">Our history</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
@@ -95,62 +114,20 @@
         <section class="content">
             <article class="blog-post">
                 <h2>An Exciting Blog Post</h2>
-                <img src="https://via.placeholder.com/300x200.png?text=Hot+Air+Balloon+1" alt="Hot Air Balloon 1" class="featured-img">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cupiditate
-                    deserunt cum facere itaque corrupti totam dicta sequi repellat. Possimus earum
-                    sit temporibus doloribus necessitatibus iure nobis, laboriosam voluptates ad
-                    amet aliquam impedit quam accusantium placeat officia corrupti! Eaque, velit?
-                    Dolor odit quia repellendus dicta accusamus totam vel consequatur porro magni
-                    <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cupiditate
-                    deserunt cum facere itaque corrupti totam dicta sequi repellat. Possimus earum
-                    sit temporibus doloribus necessitatibus iure nobis, laboriosam voluptates ad
-                    amet aliquam impedit quam accusantium placeat officia corrupti! Eaque, velit?
-                    Dolor odit quia repellendus dicta accusamus totam vel consequatur porro magni
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde tempore,
-                    laboriosam ab vero necessitatibus?Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Minima cupiditate deserunt cum facere itaque corrupti totam
-                    dicta sequi repellat. Possimus earum sit temporibus doloribus necessitatibus
-                    iure nobis, laboriosam voluptates ad
-                    <br /><br />
-
-                    amet aliquam impedit quam accusantium placeat officia corrupti! Eaque, velit?
-                    Dolor odit quia repellendus dicta accusamus totam vel consequatur porro magni
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde tempore,
-                    laboriosam ab vero necessitatibus? nobis, laboriosam voluptates ad amet aliquam
-                    impedit quam accusantium placeat officia corrupti! Eaque, velit? Dolor odit quia
-                    repellendus dicta accusamus totam vel consequatur porro magni Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Maxime unde tempore, laboriosam ab vero
-                    necessitatibus?
-                    <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, error? Ullam
-                    minus, repellat maxime cupiditate molestiae sint explicabo dolor! Minima sunt
-                    quidem consequatur et, quae, recusandae iure ipsum eum at quis maxime enim amet
-                    ipsa magnam ab laborum cum totam officiis eius tempora atque! Reiciendis, rerum
-                    error! Magni, iste fuga?
-                    <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, error? Ullam
-                    minus, repellat maxime cupiditate molestiae sint explicabo dolor! Minima sunt
-                    quidem consequatur et, quae, recusandae iure ipsum eum at quis maxime enim amet
-                    ipsa magnam ab laborum cum totam officiis eius tempora atque! Reiciendis, rerum
-                    error! Magni, iste fuga?<br /><br />
-            </p>
-
-                <h3>More Balloon Pictures</h3>
-                <div class="balloon-gallery">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+2" alt="Hot Air Balloon 2">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+3" alt="Hot Air Balloon 3">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+4" alt="Hot Air Balloon 4">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+5" alt="Hot Air Balloon 5">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+6" alt="Hot Air Balloon 6">
-                    <img src="https://via.placeholder.com/150x150.png?text=Balloon+7" alt="Hot Air Balloon 7">
-                </div>
+                <img src="balloon1.jpg" alt="Balloon Image 1">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale.</p>
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
             </article>
 
             <aside class="sidebar">
                 <h2>Photography</h2>
-                <img src="https://via.placeholder.com/300x200.png?text=Photography" alt="Photography">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut feugiat lectus. Duis viverra, lectus at scelerisque commodo, nulla sapien tincidunt sem, eget condimentum massa dolor a urna.</p>
+                <img src="balloon2.jpg" alt="Balloon Image 2">
+                <img src="balloon3.jpg" alt="Balloon Image 3">
+                <img src="balloon4.jpg" alt="Balloon Image 4">
+                <img src="balloon5.jpg" alt="Balloon Image 5">
+                <img src="balloon6.jpg" alt="Balloon Image 6">
             </aside>
         </section>
     </main>
